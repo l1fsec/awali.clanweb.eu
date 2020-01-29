@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+    $('div.hidden').fadeIn(1000).removeClass('hidden');
+    $('footer').fadeIn(1000);
+});
+  </script>
+  <style>
+    body {
+      background-image: url(res/bkg.png);
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #000000;
+      height: 50px;
+      width: 100%;
+    }
+    .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    background-color: #27013f;
+    color: white;
+    font-size: 20px;
+}
+
+    h1 {
+      color: #000000;
+      font-size: 100px;
+      text-shadow: 1px 1px 1px violet;
+    }
+    .active a {
+      font-size: 20px;
+      color: #750064 !important;
+      }    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #000000;
+      color: #690059;
+      position: fixed;
+      height: 50px;
+      bottom: 0;
+      width: 100%;
+}
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    div.hidden {
+      display: none;
+
+    }
+
+  </style>
+  
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hidden text-center">
+  <h1>Welcome to our webpage!</h1>
+    <p>This is some text.</p>
+</div>
+
+<footer class="fixed-bottom container-fluid text-center">
+  <p>2020-2021 Awaken Lights</p>
+</footer>
+
+</body>
+</html>
