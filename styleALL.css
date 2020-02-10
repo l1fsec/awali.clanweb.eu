@@ -1,73 +1,83 @@
- body {
-      font-family: AwaLi;
-      background-image: url(res/bkg.png);
-    }
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: #000000;
-      height: 50px;
-      width: 100%;
-    }
-    .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-    background-color: #27013f;
-    color: white;
-    font-size: 20px;
+body {
+font-family: AwaLi;
+background-image: url(res/bkg.png);
+}
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+background-color: #000000;
+height: 50px;
+width: 100%;
+}
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+background-color: #27013f;
+color: white;
+font-size: 20px;
+text-shadow: 3px 3px 3px purple;
+}
+h1 {
+color: #000000;
+font-size: 100px;
+text-shadow: 1px 1px 1px violet;
+}
+h1:hover {
+text-shadow: 2px 2px 2px purple;
+}
+.active a {
+font-size: 20px;
+color: #750064 !important;
 }
 
-    h1 {
-      color: #000000;
-      font-size: 100px;
-      text-shadow: 1px 1px 1px violet;
-    }
-    .active a {
-      font-size: 20px;
-      color: #750064 !important;
-      }    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #000000;
-      color: #690059;
-      position: fixed;
-      height: 50px;
-      bottom: 0;
-      width: 100%;
+footer {
+background-color: #000000;
+color: #690059;
+position: fixed;
+height: 50px;
+bottom: 0;
+width: 100%;
 }
-    }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-    div.hidden {
-      display: none;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {height:auto;}
+}
+div.hidden {
+display: none;
+}
+@font-face {
+font-family: AwaLi;
+src: url(res/awali.ttf);
+font-weight: bold;
+}
+@font-face {
+font-family: BittedAwaLi;
+src: url(res/bittedawali.ttf);
+}
+div.thing {
+display: none;
+}
+.thing1 {
+font-family: BittedAwali;
+color: white;
+font-size: 30px;
+}
+.navbar-brand {
+font-size: 50px;
+}
+.navbar-collapse {
+background-color: black;
+}
+.black {
+background-color: black;
+}
 
-    }
-    @font-face {
-      font-family: AwaLi;
-      src: url(res/awali.ttf);
-      font-weight: bold;
-    }
-    @font-face {
-      font-family: BittedAwaLi;
-      src: url(res/bittedawali.ttf);
-    }
-    div.thing {
-      display: none;
-    }
-    .thing1 {
-      font-family: BittedAwali;
-      color: black;
-      font-size: 30px;
-    }
-    .navbar-brand {
-      font-size: 50px;
-    }
-  .navbar-collapse {
-    background-color: black;
-  }
- 
+p {
+text-shadow: 3px 3px black;
+}
+p:hover {
+text-shadow: 5px 5px purple;
+}

@@ -1,85 +1,84 @@
- body {
-      font-family: AwaLi;
-      background-image: url(res/bkg.png);
-    }
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: #000000;
-      height: 50px;
-      width: 100%;
-    }
-    .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-    background-color: #27013f;
-    color: white;
-    font-size: 20px;
+body {
+font-family: AwaLi;
+background-image: url(res/bkg.png);
 }
-
-    h1 {
-      color: #000000;
-      font-size: 100px;
-      text-shadow: 1px 1px 1px violet;
-    }
-    .active a {
-      font-size: 20px;
-      color: #750064 !important;
-      }    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #000000;
-      color: #690059;
-      position: fixed;
-      height: 50px;
-      bottom: 0;
-      width: 100%;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+background-color: #000000;
+height: 50px;
+width: 100%;
 }
-    }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-    div.hidden {
-      display: none;
-
-    }
-    @font-face {
-      font-family: AwaLi;
-      src: url(res/awali.ttf);
-      font-weight: bold;
-    }
-    @font-face {
-      font-family: BittedAwaLi;
-      src: url(res/bittedawali.ttf);
-    }
-    div.thing {
-      display: none;
-    }
-    .thing1 {
-      font-family: BittedAwali;
-      color: black;
-      font-size: 30px;
-    }
-    .navbar-brand {
-      font-size: 50px;
-    }
-  .navbar-collapse {
-    background-color: black;
-   }
-   .btn-primary-outline {
-    color: black;
-    font-size: 50px;
-    font-stretch: 50px;
-    background-color: transparent;
-    text-shadow: 1px 1px 1px purple; 
-    outline: 0px purple dashed;
-    border: 1px solid black;
-    border-radius: 8px;
-    -webkit-box-shadow: 34px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 34px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 34px 10px 5px 0px rgba(0,0,0,0.75);
-   }
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+background-color: #27013f;
+color: white;
+font-size: 20px;
+}
+h1 {
+color: #000000;
+font-size: 100px;
+text-shadow: 1px 1px 1px violet;
+}
+.active a {
+font-size: 20px;
+color: #750064 !important;
+}
+/* Set black background color, white text and some padding */
+footer {
+background-color: #000000;
+color: #690059;
+position: fixed;
+height: 50px;
+bottom: 0;
+width: 100%;
+}
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {height:auto;}
+}
+div.hidden {
+display: none;
+}
+@font-face {
+font-family: AwaLi;
+src: url(res/awali.ttf);
+font-weight: bold;
+}
+@font-face {
+font-family: BittedAwaLi;
+src: url(res/bittedawali.ttf);
+}
+div.thing {
+display: none;
+}
+.thing1 {
+font-family: BittedAwali;
+color: black;
+font-size: 30px;
+}
+.navbar-brand {
+font-size: 50px;
+}
+.navbar-collapse {
+background-color: black;
+}
+.btn-primary-outline {
+color: black;
+font-size: 50px;
+font-stretch: 50px;
+background-color: transparent;
+text-shadow: 1px 1px 1px transparent;
+outline: 0px transparent dashed;
+border: 0px solid black;
+border-radius: 8px;
+}
+.btn-primary-outline:hover {
+color: white;
+font-size: 60px;
+}
