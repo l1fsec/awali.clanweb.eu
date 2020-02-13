@@ -2,6 +2,8 @@ body {
 font-family: AwaLi;
 background-image: url(res/bkg.png);
 }
+
+ /* Navbar styling */
 .navbar {
 margin-bottom: 0;
 border-radius: 0;
@@ -15,6 +17,19 @@ color: white;
 font-size: 20px;
 text-shadow: 3px 3px 3px purple;
 }
+
+.active a {
+font-size: 20px;
+color: #750064 !important;
+}
+.navbar-brand {
+font-size: 50px;
+}
+.navbar-collapse {
+background-color: black;
+}
+ 
+/*Start*/
 h1 {
 color: #000000;
 font-size: 100px;
@@ -23,20 +38,8 @@ text-shadow: 1px 1px 1px violet;
 h1:hover {
 text-shadow: 2px 2px 2px purple;
 }
-.active a {
-font-size: 20px;
-color: #750064 !important;
-}
 
-footer {
-background-color: #000000;
-color: #690059;
-position: fixed;
-height: 50px;
-bottom: 0;
-width: 100%;
-}
-}
+
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
 .sidenav {
@@ -48,6 +51,7 @@ padding: 15px;
 div.hidden {
 display: none;
 }
+/*Fonts*/
 @font-face {
 font-family: AwaLi;
 src: url(res/awali.ttf);
@@ -57,27 +61,89 @@ font-weight: bold;
 font-family: BittedAwaLi;
 src: url(res/bittedawali.ttf);
 }
+/*Animations*/
 div.thing {
 display: none;
 }
+/*For divs*/
 .thing1 {
 font-family: BittedAwali;
 color: white;
 font-size: 25px;
 }
-.navbar-brand {
-font-size: 50px;
-}
-.navbar-collapse {
-background-color: black;
-}
+
 .black {
 background-color: black;
 }
-
+/*Text*/
 p {
 text-shadow: 3px 3px black;
 }
 p:hover {
 text-shadow: 5px 5px purple;
+}
+/*Steam Group Button*/
+.steam-group-button {
+	font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+	height: 28px;
+	border-radius: 4px;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 26px;
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	border: #333 solid 1px;
+	background-color: #4D4B48;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4D4B48),to(#111));
+	background-image: -moz-linear-gradient(top,#4D4B48,#111);
+	background-image: linear-gradient(top,#4D4B48,#111);
+}
+ 
+.steam-group-button:focus, .steam-group-button:hover, .steam-group-button:active {
+	color: #FFF;
+	border-color: #111;
+	background-color: #333;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#444),to(#111));
+	background-image: -moz-linear-gradient(top,#444,#111);
+	background-image: linear-gradient(top,#444,#111);
+	box-shadow: none;
+}
+ 
+.steam-group-button:active {
+	box-shadow: inset 0 3px 7px rgba(255,255,255,0.15);
+}
+ 
+.steam-group-icon {
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	background: transparent url('//cdn.steampowered.com/favicon.ico') 0 0 no-repeat;
+}
+ 
+.steam-group-label {
+	padding: 0 7px 0 26px;
+}
+
+/*Footer*/
+
+footer {
+background-color: #000000;
+color: #690059;
+position: fixed;
+height: 50px;
+bottom: 0;
+width: 100%;
 }
